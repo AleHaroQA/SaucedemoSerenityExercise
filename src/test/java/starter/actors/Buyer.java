@@ -1,4 +1,4 @@
-package starter.saucedemo.actors;
+package starter.actors;
 
 public enum Buyer {
 

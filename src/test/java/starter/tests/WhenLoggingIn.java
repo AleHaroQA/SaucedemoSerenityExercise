@@ -1,4 +1,4 @@
-package starter.saucedemo.tests;
+package starter.tests;
 
 import net.serenitybdd.annotations.Managed;
 
@@ -9,9 +9,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
-import starter.saucedemo.actions.LoginActions;
-import starter.saucedemo.actors.User;
-import starter.saucedemo.pages.InventoryPage;
+import starter.actions.LoginActions;
+import starter.actors.User;
+import starter.pages.InventoryPage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

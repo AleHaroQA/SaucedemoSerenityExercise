@@ -1,4 +1,4 @@
-package starter.saucedemo.actions;
+package starter.actions;
 
 import net.serenitybdd.core.steps.UIInteractions;
 

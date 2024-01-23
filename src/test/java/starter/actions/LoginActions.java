@@ -1,7 +1,7 @@
-package starter.saucedemo.actions;
+package starter.actions;
 
 import net.serenitybdd.core.steps.UIInteractions;
-import starter.saucedemo.actors.User;
+import starter.actors.User;
 
 public class LoginActions extends UIInteractions {
 

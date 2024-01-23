@@ -1,24 +1,28 @@
-package starter.saucedemo.tests;
+package starter.tests;
 
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.core.Serenity;
+import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
-import starter.saucedemo.actions.LoginActions;
-import starter.saucedemo.actions.PurchaseActions;
-import starter.saucedemo.actors.Buyer;
-import starter.saucedemo.actors.User;
-import starter.saucedemo.pages.CheckoutCompletePage;
+import starter.actions.LoginActions;
+import starter.actions.PurchaseActions;
+import starter.actors.Buyer;
+import starter.actors.User;
+import starter.pages.CheckoutCompletePage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@ExtendWith(SerenityJUnit5Extension.class)
 public class WhenPurchasingAProduct {
 
     @Steps
     LoginActions loginActions;
+    @Steps
     PurchaseActions purchaseActions;
     CheckoutCompletePage completePage;
 

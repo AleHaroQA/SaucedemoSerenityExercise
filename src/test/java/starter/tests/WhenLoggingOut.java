@@ -1,4 +1,4 @@
-package starter.saucedemo.tests;
+package starter.tests;
 
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.annotations.Steps;
@@ -9,10 +9,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
-import starter.saucedemo.actions.LoginActions;
-import starter.saucedemo.actions.LogoutActions;
-import starter.saucedemo.actors.User;
-import starter.saucedemo.pages.HomePage;
+import starter.actions.LoginActions;
+import starter.actions.LogoutActions;
+import starter.actors.User;
+import starter.pages.HomePage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -21,6 +21,7 @@ public class WhenLoggingOut {
 
     @Steps
     LoginActions loginActions;
+    @Steps
     LogoutActions logoutActions;
     HomePage homePage;
 

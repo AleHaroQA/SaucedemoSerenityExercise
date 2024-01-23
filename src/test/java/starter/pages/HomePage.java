@@ -1,4 +1,4 @@
-package starter.saucedemo.pages;
+package starter.pages;
 
 import net.serenitybdd.core.pages.PageObject;
 
