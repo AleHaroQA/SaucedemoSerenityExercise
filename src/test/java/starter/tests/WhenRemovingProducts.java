@@ -5,6 +5,7 @@ import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -44,10 +45,10 @@ public class WhenRemovingProducts {
     }
 
 
-
     /*Test para probar si elegí bien el selector para validar que carro está vacío*/
     //Debe ser "fail"
     @Test
+    @Disabled
     @DisplayName("Remove only 1 product ")
     public void removeOneProductFromCart(){
         removeActions.removeOneProduct();
